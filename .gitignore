@@ -1,0 +1,11 @@
+.DS_Store
+*.log
+*.tar.gz
+*.zip
+.env
+.env.*
+.vscode/
+.idea/
+.codex/
+.agents/
+AGENTS.md
