@@ -39,14 +39,15 @@ Project files and the GOX toolchain cache are not removed.
 
 ## Maintaining the formula
 
-After publishing a GOX Server release, update the version, four GitHub archive URLs
-and their SHA-256 values in [Formula/gox.rb](Formula/gox.rb), using
-`checksums.sha256` from that same release. Do not use moving `latest` URLs or mirrors.
+The server's **Distribute stable release** workflow dispatches this tap's
+**Publish Homebrew release** workflow. It resolves the published GitHub release,
+generates the version, four immutable URLs and SHA-256 values, runs installation
+tests on Linux/macOS and both architectures, then commits the tested formula.
 
-The CI workflow installs the formula from this checkout on Linux and macOS, on both
-architectures. It checks the version, update guidance, project creation, plugin
-compilation, HTTP serving and uninstall. All platforms must pass before announcing
-support for a new release.
+To retry, run **Publish Homebrew release** from main with the version, or leave it
+empty for latest. Old releases cannot replace the current stable formula.
+The workflow needs contents-write permission on this repository; no external
+package registry credentials are required.
 
 ## Project
 
