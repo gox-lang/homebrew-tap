@@ -1,28 +1,28 @@
 class Gox < Formula
   desc "Web framework and development tools for Go"
   homepage "https://gox-lang.dev"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/gox-lang/server/releases/download/v0.1.4/gox_0.1.4_darwin_amd64.tar.gz"
-      sha256 "7bd51758c1efbf104c175a2c3b404cd3ab1344b622e3447a42d530b43a7508a0"
+      url "https://github.com/gox-lang/server/releases/download/v0.1.5/gox_0.1.5_darwin_amd64.tar.gz"
+      sha256 "68ec41e92654eadde053ea79ee508e10bc63a00d4b19c77b843a02b75321b282"
     end
     on_arm do
-      url "https://github.com/gox-lang/server/releases/download/v0.1.4/gox_0.1.4_darwin_arm64.tar.gz"
-      sha256 "5454890cd61ecd524698c50f85db88a1cdd6d301ef56efed3f05d38187bce56d"
+      url "https://github.com/gox-lang/server/releases/download/v0.1.5/gox_0.1.5_darwin_arm64.tar.gz"
+      sha256 "fd43cfab7943b3f0b17328ae756cdfa6bb2e56229108ff44593581779a0a4f3a"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/gox-lang/server/releases/download/v0.1.4/gox_0.1.4_linux_amd64.tar.gz"
-      sha256 "f8512ebf3ccfcec80958a94fba231525ec2dc343a8c4edcc4ad8846377e056c1"
+      url "https://github.com/gox-lang/server/releases/download/v0.1.5/gox_0.1.5_linux_amd64.tar.gz"
+      sha256 "65070e744688ad699444f905e4989a2e80ef6ca519f5ae707335e6e41db17fcf"
     end
     on_arm do
-      url "https://github.com/gox-lang/server/releases/download/v0.1.4/gox_0.1.4_linux_arm64.tar.gz"
-      sha256 "05f991dc15564f25d25eee8ef7ef3feddc542084a5cb3a3a06c543ed3c195ece"
+      url "https://github.com/gox-lang/server/releases/download/v0.1.5/gox_0.1.5_linux_arm64.tar.gz"
+      sha256 "0aaa759b46714beed3d7734bce254d826131b9aeb516c300067193b70b30d5b4"
     end
   end
 
